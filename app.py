@@ -13,7 +13,7 @@ st.set_page_config(page_title="E-commerce Insights Dashboard", layout="wide")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("clean_retail.csv", parse_dates=["InvoiceDate"])
+    df = pd.read_csv("clean_retail.csv.gz", parse_dates=["InvoiceDate"])
     return df
 
 
