@@ -7,7 +7,7 @@ Run this once before starting the app: python clean_data.py
 import pandas as pd
 
 RAW_PATH = "online_retail.csv"
-CLEAN_PATH = "clean_retail.csv"
+CLEAN_PATH = "clean_retail.csv.gz"
 
 
 def clean(df: pd.DataFrame) -> pd.DataFrame:
